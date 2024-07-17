@@ -4,7 +4,7 @@ import { User, Briefcase, Star, UserCheck, Users, Award } from "lucide-react"; /
 
 const categories = [
   {
-    id: "not-sure",
+    id: "#not-sure",
     title: "Choose a career level",
     subtitle: "(Not sure? Take our quiz!)",
     icon: <Star />, // Icon for Not Sure
@@ -48,7 +48,7 @@ const UserCategory = () => {
   // Determine the initial category based on the current path
   const getCategoryFromPath = (path) => {
     const category = categories.find((cat) => `/${cat.id}` === path);
-    return category ? category.id : "not-sure";
+    return category ? category.id : "#not-sure";
   };
 
   const [selectedCategory, setSelectedCategory] = useState(getCategoryFromPath(location.pathname));

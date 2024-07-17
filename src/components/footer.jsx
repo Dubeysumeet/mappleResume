@@ -45,50 +45,50 @@ const Footer = () => {
             </div>
             <div className="flex flex-wrap gap-10">
               <div className="flex flex-col gap-5">
-              <NavLink to="/" className="text-gray-400 text-lg leading-5 hover:underline">Home</NavLink>
-              <NavLink to="/packages-and-prices" className="text-gray-400 text-lg leading-4 hover:underline">Packages and prices</NavLink>
-              <NavLink to="/how-it-works" className="text-gray-400 text-lg leading-4 hover:underline" >How it works</NavLink>
-              <NavLink to="/why-choose-us" className="text-gray-400 text-lg leading-4 hover:underline">Why choose us</NavLink>
-              <NavLink to="/take-the-career-quiz" className="text-gray-400 text-lg leading-4 hover:underline" >Take the Career Quiz</NavLink>
-              <NavLink to="/contact" className="text-gray-400 text-lg leading-4 hover:underline">Contact</NavLink>
+              <NavLink to="/" className="text-gray-400 text-base leading-5 hover:underline">Home</NavLink>
+              <NavLink to="#packages-and-prices" className="text-gray-400 text-base leading-4 hover:underline">Packages and prices</NavLink>
+              <NavLink to="#how-it-works" className="text-gray-400 text-base leading-4 hover:underline" >How it works</NavLink>
+              <NavLink to="#why-choose-us" className="text-gray-400 text-base leading-4 hover:underline">Why choose us</NavLink>
+              <NavLink to="#take-the-career-quiz" className="text-gray-400 text-base leading-4 hover:underline" >Take the Career Quiz</NavLink>
+              <NavLink to="#contact" className="text-gray-400 text-base leading-4 hover:underline">Contact</NavLink>
 
               </div>
 
               <div className="flex flex-col gap-5">
-              <NavLink to="/" className="text-gray-400 text-lg leading-4 hover:underline">Home</NavLink>
-              <NavLink to="/packages-and-prices" className="text-gray-400 text-lg leading-4 hover:underline">Packages and prices</NavLink>
-              <NavLink to="/how-it-works" className="text-gray-400 text-lg leading-4 hover:underline" >How it works</NavLink>
-              <NavLink to="/why-choose-us" className="text-gray-400 text-lg leading-4 hover:underline">Why choose us</NavLink>
-              <NavLink to="/take-the-career-quiz" className="text-gray-400 text-lg leading-4 hover:underline" >Take the Career Quiz</NavLink>
-              <NavLink to="/contact" className="text-gray-400 text-lg leading-4 hover:underline">Contact</NavLink>
+              <NavLink to="/" className="text-gray-400 text-base leading-5 hover:underline">Home</NavLink>
+              <NavLink to="#packages-and-prices" className="text-gray-400 text-base leading-4 hover:underline">Packages and prices</NavLink>
+              <NavLink to="#how-it-works" className="text-gray-400 text-base leading-4 hover:underline" >How it works</NavLink>
+              <NavLink to="#why-choose-us" className="text-gray-400 text-base leading-4 hover:underline">Why choose us</NavLink>
+              <NavLink to="#take-the-career-quiz" className="text-gray-400 text-base leading-4 hover:underline" >Take the Career Quiz</NavLink>
+              <NavLink to="#contact" className="text-gray-400 text-base leading-4 hover:underline">Contact</NavLink>
 
               </div>
 
               <div className="flex flex-col gap-5">
-              <NavLink to="/" className="text-gray-400 text-lg leading-4 hover:underline">Home</NavLink>
-              <NavLink to="/packages-and-prices" className="text-gray-400 text-lg leading-4 hover:underline">Packages and prices</NavLink>
-              <NavLink to="/how-it-works" className="text-gray-400 text-lg leading-4 hover:underline" >How it works</NavLink>
-              <NavLink to="/why-choose-us" className="text-gray-400 text-lg leading-4 hover:underline">Why choose us</NavLink>
-              <NavLink to="/take-the-career-quiz" className="text-gray-400 text-lg leading-4 hover:underline" >Take the Career Quiz</NavLink>
-              <NavLink to="/contact" className="text-gray-400 text-lg leading-4 hover:underline">Contact</NavLink>
+              <NavLink to="/" className="text-gray-400 text-base leading-5 hover:underline">Home</NavLink>
+              <NavLink to="#packages-and-prices" className="text-gray-400 text-base leading-4 hover:underline">Packages and prices</NavLink>
+              <NavLink to="#how-it-works" className="text-gray-400 text-base leading-4 hover:underline" >How it works</NavLink>
+              <NavLink to="#why-choose-us" className="text-gray-400 text-base leading-4 hover:underline">Why choose us</NavLink>
+              <NavLink to="#take-the-career-quiz" className="text-gray-400 text-base leading-4 hover:underline" >Take the Career Quiz</NavLink>
+              <NavLink to="#contact" className="text-gray-400 text-base leading-4 hover:underline">Contact</NavLink>
 
               </div>
               <div className="flex flex-col gap-5">
-              <NavLink to="/" className="text-gray-400 text-lg leading-4 hover:underline">Home</NavLink>
-              <NavLink to="/packages-and-prices" className="text-gray-400 text-lg leading-4 hover:underline">Packages and prices</NavLink>
-              <NavLink to="/how-it-works" className="text-gray-400 text-lg leading-4 hover:underline" >How it works</NavLink>
-              <NavLink to="/why-choose-us" className="text-gray-400 text-lg leading-4 hover:underline">Why choose us</NavLink>
-              <NavLink to="/take-the-career-quiz" className="text-gray-400 text-lg leading-4 hover:underline" >Take the Career Quiz</NavLink>
-              <NavLink to="/contact" className="text-gray-400 text-lg leading-4 hover:underline">Contact</NavLink>
+              <NavLink to="/" className="text-gray-400 text-base leading-5 hover:underline">Home</NavLink>
+              <NavLink to="#packages-and-prices" className="text-gray-400 text-base leading-4 hover:underline">Packages and prices</NavLink>
+              <NavLink to="#how-it-works" className="text-gray-400 text-base leading-4 hover:underline" >How it works</NavLink>
+              <NavLink to="#why-choose-us" className="text-gray-400 text-base leading-4 hover:underline">Why choose us</NavLink>
+              <NavLink to="#take-the-career-quiz" className="text-gray-400 text-base leading-4 hover:underline" >Take the Career Quiz</NavLink>
+              <NavLink to="#contact" className="text-gray-400 text-base leading-4 hover:underline">Contact</NavLink>
 
               </div>
               <div className="flex flex-col gap-5">
-              <NavLink to="/" className="text-gray-400 text-lg leading-4 hover:underline">Home</NavLink>
-              <NavLink to="/packages-and-prices" className="text-gray-400 text-lg leading-4 hover:underline">Packages and prices</NavLink>
-              <NavLink to="/how-it-works" className="text-gray-400 text-lg leading-4 hover:underline" >How it works</NavLink>
-              <NavLink to="/why-choose-us" className="text-gray-400 text-lg leading-4 hover:underline">Why choose us</NavLink>
-              <NavLink to="/take-the-career-quiz" className="text-gray-400 text-lg leading-4 hover:underline" >Take the Career Quiz</NavLink>
-              <NavLink to="/contact" className="text-gray-400 text-lg leading-4 hover:underline">Contact</NavLink>
+              <NavLink to="/" className="text-gray-400 text-base leading-5 hover:underline">Home</NavLink>
+              <NavLink to="#packages-and-prices" className="text-gray-400 text-base leading-4 hover:underline">Packages and prices</NavLink>
+              <NavLink to="#how-it-works" className="text-gray-400 text-base leading-4 hover:underline" >How it works</NavLink>
+              <NavLink to="#why-choose-us" className="text-gray-400 text-base leading-4 hover:underline">Why choose us</NavLink>
+              <NavLink to="#take-the-career-quiz" className="text-gray-400 text-base leading-4 hover:underline" >Take the Career Quiz</NavLink>
+              <NavLink to="#contact" className="text-gray-400 text-base leading-4 hover:underline">Contact</NavLink>
 
               </div>
 
@@ -133,7 +133,7 @@ const Footer = () => {
           
         </div>
         <hr />
-        <div className="font-bold text-white py-14 text-center">
+        <div className="font-bold text-white text-sm py-14 text-center">
           Powered by Resume Target Inc. © 2002-2024 Professional Resume Writing
           Services
         </div>
