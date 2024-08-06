@@ -9,6 +9,7 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import XIcon from '@mui/icons-material/X';
 import { Button } from "./ui/button";
+import logo from '../assets/logo.png';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -29,7 +30,7 @@ const Header = () => {
         <div className="flex justify-between items-center h-12 px-5">
           {/* Logo */}
           <div className="text-black font-bold flex items-center">
-         <MappleResumeLogo/>
+          <img className="h-20 mt-10 w-40" src={logo} alt="Mapple Resume logo" />
 
           {/* <span className="ml-2">MappleResume</span> */}
           </div>

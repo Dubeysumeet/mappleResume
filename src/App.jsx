@@ -12,6 +12,7 @@ import MidLevel from './pages/mid-service';
 import SeniorLevel from './pages/senior-level';
 import ProfessionalLevel from './pages/professional-level';
 import ExecutiveLevel from './pages/executive-level';
+import WhyChooseUs from './pages/why-choose-us';
 
 function App() {
 
@@ -33,6 +34,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/free-resume-review" element={<ResumeReview />} />
+        <Route path="/Why-choose-us" element={<WhyChooseUs/>} />
       </Routes>
       </main>
 
