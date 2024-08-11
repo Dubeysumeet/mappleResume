@@ -6,6 +6,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import XIcon from "@mui/icons-material/X";
+import logo from '../assets/logo.png';
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -16,7 +17,7 @@ const Footer = () => {
     <>
       <div className="footer flex flex-col flex-wrap bg-blue-950 px-5">
         <div className="footer-section-1 flex flex-wrap justify-between pt-24 pb-12 border-b-slate-300 border-gray">
-          <MappleResumeLogo />
+        <a href="/">  <img className="h-20 mt-10 w-40" src={logo} alt="Mapple Resume logo" /> </a>
           <div className="flex flex-row my-7 gap-3">
             <p className="text-lg text-gray-200">Questions?</p>
             <Smartphone className="text-green-600" size={24} />

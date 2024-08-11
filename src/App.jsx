@@ -24,7 +24,7 @@ function App() {
       <Header />
       <main className="flex-grow">
       <Routes>
-        <Route path="/" element={<EntryLevel />} />
+        <Route path="/" element={<Home/>} />
         <Route path="/entry-level" element={<EntryLevel />} />
         <Route path="/mid-level" element={<MidLevel/>} />
         <Route path="/senior-level" element={<SeniorLevel/>} />

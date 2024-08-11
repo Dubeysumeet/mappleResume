@@ -30,7 +30,8 @@ const Header = () => {
         <div className="flex justify-between items-center h-12 px-5">
           {/* Logo */}
           <div className="text-black font-bold flex items-center">
-          <img className="h-20 mt-10 w-40" src={logo} alt="Mapple Resume logo" />
+            <a href="/">  <img className="h-20 mt-10 w-40" src={logo} alt="Mapple Resume logo" /> </a>
+         
 
           {/* <span className="ml-2">MappleResume</span> */}
           </div>
@@ -58,14 +59,14 @@ const Header = () => {
               <NavLink to="/" className="text-white text-xl hover:underline" onClick={toggleMenu}>Home</NavLink>
               <NavLink to="#packages-and-prices" className="text-white text-xl  hover:underline" onClick={toggleMenu}>Packages and prices</NavLink>
               <NavLink to="#how-it-works" className="text-white text-xl hover:underline" onClick={toggleMenu}>How it works</NavLink>
-              <NavLink to="#why-choose-us" className="text-white text-xl hover:underline" onClick={toggleMenu}>Why choose us</NavLink>
+              <NavLink to="/why-choose-us" className="text-white text-xl hover:underline" onClick={toggleMenu}>Why choose us</NavLink>
               <NavLink to="#take-the-career-quiz" className="text-white text-xl hover:underline" onClick={toggleMenu}>Take the Career Quiz</NavLink>
               <NavLink to="#contact" className="text-white text-xl hover:underline" onClick={toggleMenu}>Contact</NavLink>
               <br />
               <NavLink to="/" className="text-gray-400 text-lg leading-4 hover:underline" onClick={toggleMenu}>Home</NavLink>
               <NavLink to="#packages-and-prices" className="text-gray-400 text-lg leading-4 hover:underline" onClick={toggleMenu}>Packages and prices</NavLink>
               <NavLink to="#how-it-works" className="text-gray-400 text-lg leading-4 hover:underline" onClick={toggleMenu}>How it works</NavLink>
-              <NavLink to="#why-choose-us" className="text-gray-400 text-lg leading-4 hover:underline" onClick={toggleMenu}>Why choose us</NavLink>
+              <NavLink to="/why-choose-us" className="text-gray-400 text-lg leading-4 hover:underline" onClick={toggleMenu}>Why choose us</NavLink>
               <NavLink to="#take-the-career-quiz" className="text-gray-400 text-lg leading-4 hover:underline" onClick={toggleMenu}>Take the Career Quiz</NavLink>
               <NavLink to="#contact" className="text-gray-400 text-lg leading-4 hover:underline" onClick={toggleMenu}>Contact</NavLink>
 
