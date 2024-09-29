@@ -35,6 +35,7 @@ function App() {
               <Route path="/about-us" element={<WhyChooseUs />} />
               <Route path="/our-pricing" element={<PricingPage />} />
               {/* Catch-all route for Not Found */}
+              <Route path="/404" element={<NotFound />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
