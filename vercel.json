@@ -1,0 +1,17 @@
+{
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/index.html"
+      }
+    ],
+    "cleanUrls": true,
+    "redirects": [
+      {
+        "source": "/404",
+        "destination": "/404",
+        "permanent": false
+      }
+    ]
+  }
+  
