@@ -3,7 +3,7 @@ import { Smartphone } from "lucide-react";
 const WhyChooseUs = () => {
   return (
     <>
-    <div className="text-center py-24 pl-16 pr-16 mt-20 bg-gray-50">
+    <div className="text-center py-24 pl-16 pr-16 mt-1 bg-gray-50">
       <h2 className="text-5xl text-black font-bold mb-8">Why Choose Us</h2>
       <p className="text-md text-gray-500 font-medium">When you choose Resume Target you don’t just get a new resume - you benefit from a proven resume writing service built around your success.</p>
     </div>

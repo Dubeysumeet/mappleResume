@@ -4,8 +4,8 @@ import { useNavigate } from "react-router-dom";
 import teamImage from '../assets/team.jpg';
 import HomeSection1 from "@/components/components-templates/homesection1";
 import TopRatedResumeService from "@/components/components-templates/topRatedService";
-import ExpandCircleDownIcon from '@mui/icons-material/ExpandCircleDown';
 import HomeCategory from "@/components/components-templates/HomeCategory";
+import ResumeReviewForm from "./emailForm";
 
 const Home = () => {
 
@@ -17,7 +17,7 @@ const Home = () => {
     return (
       <div className="">
   <div
-  className="w-full px-4 pt-96 bg-cover bg-center mt-10"
+  className="w-full px-4 pt-96 bg-cover bg-center mt-1"
   style={{ backgroundImage: `url(${teamImage})` }}
 >
   <div className="flex flex-col bg-white bg-opacity-75 p-6 rounded-md ">
@@ -47,21 +47,32 @@ const Home = () => {
 
 <div className="my-10">
 <div className="px-5 py-28 bg-gray-50">
-          <div className="flex flex-wrap justify-between">
-            <div className="flex flex-col w-full md:w-2/3">
-              <h1 className="text-5xl text-black font-bold">Our Triple
-              Promise Guarantee</h1>
-              <p className="py-9 text-xl font-bold text-gray-400">All resume writing services are backed by our industry-first Triple
-Promise Guarantee to ensure you find interview success.</p>
-<Button className="mt-5 w-56 text-lg px-6 bg-green-600 hover:bg-green-700 text-white rounded-md" onClick={handleFreeResumeReview}>
-              Check Our Prices
-            </Button>
-            
-            </div>
-            <div className=" md:w-1/3">
-              <TopRatedResumeService/>
-            </div>
-          </div>
+<div className="flex flex-col md:flex-row justify-between">
+  {/* Left side with the text content */}
+  <div className="flex flex-col w-full md:w-1/2 md:pr-10">
+    <h1 className="text-5xl text-black font-bold">Our Triple Promise Guarantee</h1>
+    <p className="py-9 text-xl font-bold text-gray-400">
+      We are offering a <span className="text-green-600">Free Resume Review</span> to help you land your next dream job. All resume writing services are backed by our industry-first Triple Promise Guarantee:
+    </p>
+    <ul className="list-disc pl-5 text-gray-400 text-lg">
+      <li className="py-2">Professional resume writers with industry-specific expertise.</li>
+      <li className="py-2">A personalized resume that highlights your strengths and achievements.</li>
+      <li className="py-2">100% satisfaction guaranteed — we work with you until you’re happy.</li>
+    </ul>
+    <Button
+      className="mt-5 w-56 text-lg px-6 bg-green-600 hover:bg-green-700 text-white rounded-md"
+      onClick={handleFreeResumeReview}
+    >
+       Get Your Free Review
+    </Button>
+  </div>
+
+  {/* Right side with the form */}
+  <div className="w-full md:w-1/2 mt-10 md:mt-0">
+    <ResumeReviewForm />
+  </div>
+</div>
+
         </div>
 </div>
         <div className="my-10">
@@ -75,7 +86,7 @@ Promise Guarantee to ensure you find interview success.</p>
 caring team and
 fanatical support</h2>
           <p className="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, quae?</p>
-          <a href="/why-choose-us">
+          <a href="/about-us">
           <Button>Learn More about us</Button></a>
           </div>
           <div className="w-2/3">

@@ -4,7 +4,7 @@ import { User, Briefcase, Star, UserCheck, Users, Award } from "lucide-react"; /
 
 const categories = [
   {
-    id: "#not-sure",
+    id: "#",
     title: "Choose a career level",
     subtitle: "(Not sure? Take our quiz!)",
     icon: <Star />, // Icon for Not Sure

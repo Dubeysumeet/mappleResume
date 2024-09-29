@@ -47,50 +47,21 @@ const Footer = () => {
             <div className="flex flex-wrap gap-10">
               <div className="flex flex-col gap-5">
               <NavLink to="/" className="text-gray-400 text-base leading-5 hover:underline">Home</NavLink>
-              <NavLink to="#packages-and-prices" className="text-gray-400 text-base leading-4 hover:underline">Packages and prices</NavLink>
-              <NavLink to="#how-it-works" className="text-gray-400 text-base leading-4 hover:underline" >How it works</NavLink>
-              <NavLink to="#why-choose-us" className="text-gray-400 text-base leading-4 hover:underline">Why choose us</NavLink>
-              <NavLink to="#take-the-career-quiz" className="text-gray-400 text-base leading-4 hover:underline" >Take the Career Quiz</NavLink>
-              <NavLink to="#contact" className="text-gray-400 text-base leading-4 hover:underline">Contact</NavLink>
-
               </div>
 
               <div className="flex flex-col gap-5">
-              <NavLink to="/" className="text-gray-400 text-base leading-5 hover:underline">Home</NavLink>
-              <NavLink to="#packages-and-prices" className="text-gray-400 text-base leading-4 hover:underline">Packages and prices</NavLink>
-              <NavLink to="#how-it-works" className="text-gray-400 text-base leading-4 hover:underline" >How it works</NavLink>
-              <NavLink to="#why-choose-us" className="text-gray-400 text-base leading-4 hover:underline">Why choose us</NavLink>
-              <NavLink to="#take-the-career-quiz" className="text-gray-400 text-base leading-4 hover:underline" >Take the Career Quiz</NavLink>
-              <NavLink to="#contact" className="text-gray-400 text-base leading-4 hover:underline">Contact</NavLink>
-
+              <NavLink to="/our-pricing" className="text-gray-400 text-base leading-4 hover:underline">Our Pricing</NavLink>
               </div>
 
               <div className="flex flex-col gap-5">
-              <NavLink to="/" className="text-gray-400 text-base leading-5 hover:underline">Home</NavLink>
-              <NavLink to="#packages-and-prices" className="text-gray-400 text-base leading-4 hover:underline">Packages and prices</NavLink>
-              <NavLink to="#how-it-works" className="text-gray-400 text-base leading-4 hover:underline" >How it works</NavLink>
-              <NavLink to="#why-choose-us" className="text-gray-400 text-base leading-4 hover:underline">Why choose us</NavLink>
-              <NavLink to="#take-the-career-quiz" className="text-gray-400 text-base leading-4 hover:underline" >Take the Career Quiz</NavLink>
-              <NavLink to="#contact" className="text-gray-400 text-base leading-4 hover:underline">Contact</NavLink>
+              <NavLink to="/about-us" className="text-gray-400 text-base leading-4 hover:underline">Why choose us</NavLink>
+              </div>
+              <div className="flex flex-col gap-5">
+              <NavLink to="/contact-us" className="text-gray-400 text-base leading-4 hover:underline">Contact</NavLink>
 
               </div>
               <div className="flex flex-col gap-5">
-              <NavLink to="/" className="text-gray-400 text-base leading-5 hover:underline">Home</NavLink>
-              <NavLink to="#packages-and-prices" className="text-gray-400 text-base leading-4 hover:underline">Packages and prices</NavLink>
-              <NavLink to="#how-it-works" className="text-gray-400 text-base leading-4 hover:underline" >How it works</NavLink>
-              <NavLink to="#why-choose-us" className="text-gray-400 text-base leading-4 hover:underline">Why choose us</NavLink>
-              <NavLink to="#take-the-career-quiz" className="text-gray-400 text-base leading-4 hover:underline" >Take the Career Quiz</NavLink>
-              <NavLink to="#contact" className="text-gray-400 text-base leading-4 hover:underline">Contact</NavLink>
-
-              </div>
-              <div className="flex flex-col gap-5">
-              <NavLink to="/" className="text-gray-400 text-base leading-5 hover:underline">Home</NavLink>
-              <NavLink to="#packages-and-prices" className="text-gray-400 text-base leading-4 hover:underline">Packages and prices</NavLink>
-              <NavLink to="#how-it-works" className="text-gray-400 text-base leading-4 hover:underline" >How it works</NavLink>
-              <NavLink to="#why-choose-us" className="text-gray-400 text-base leading-4 hover:underline">Why choose us</NavLink>
-              <NavLink to="#take-the-career-quiz" className="text-gray-400 text-base leading-4 hover:underline" >Take the Career Quiz</NavLink>
-              <NavLink to="#contact" className="text-gray-400 text-base leading-4 hover:underline">Contact</NavLink>
-
+              <NavLink to="/entry-level" className="text-gray-400 text-base leading-5 hover:underline">Choose a career level</NavLink>
               </div>
 
             </div>

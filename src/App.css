@@ -1,0 +1,22 @@
+/* src/App.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .items-center {
+    align-items: center;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .min-h-screen {
+    min-height: 100vh;
+  }
+  
