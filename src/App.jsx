@@ -41,7 +41,7 @@ function App() {
           <Footer />
         </div> */}
         <Routes>
-        <Route path="/redesign" element={<Redesign />} />
+        <Route path="/" element={<Redesign />} />
         </Routes>
       </Router>
     </div>
