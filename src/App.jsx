@@ -15,12 +15,12 @@ import ExecutiveLevel from './pages/executive-level';
 import WhyChooseUs from './pages/why-choose-us';
 import PricingPage from './pages/pricing';
 import NotFound from './pages/404'; // Import the NotFound component
-
+import Redesign from './pages/Redesign';
 function App() {
   return (
     <div>
       <Router>
-        <div className="flex flex-col min-h-screen">
+        {/* <div className="flex flex-col min-h-screen">
           <Header />
           <main className="flex-grow">
             <Routes>
@@ -34,13 +34,15 @@ function App() {
               <Route path="/free-resume-review" element={<ResumeReview />} />
               <Route path="/about-us" element={<WhyChooseUs />} />
               <Route path="/our-pricing" element={<PricingPage />} />
-              {/* Catch-all route for Not Found */}
               <Route path="/404" element={<NotFound />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
           <Footer />
-        </div>
+        </div> */}
+        <Routes>
+        <Route path="/redesign" element={<Redesign />} />
+        </Routes>
       </Router>
     </div>
   );
