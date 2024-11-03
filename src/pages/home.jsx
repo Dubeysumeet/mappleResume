@@ -16,37 +16,45 @@ const Home = () => {
 
     return (
       <div className="">
-  <div
-  className="w-full px-4 pt-96 bg-cover bg-center mt-1"
-  style={{ backgroundImage: `url(${teamImage})` }}
->
-  <div className="flex flex-col bg-white bg-opacity-75 p-6 rounded-md ">
-    <h1 className="text-4xl font-bold">Get the resume that gets you hired</h1>
-    <Button
-      className="mt-5 w-56 text-lg px-6 bg-green-600 hover:bg-green-700 text-white rounded-md"
-      onClick={handleFreeResumeReview}
-    >
-      Check Our Prices
-    </Button>
-  </div>
-  
-</div>
-
-
-
-        <div className="my-10 bg-blue-950 pt-14 pb-9">
-          <h1 className="text-5xl font-bold text-center text-white">Choose your career level to get started:
-          </h1>
-          <HomeCategory/>
-
-          <h1 className="text-5xl font-bold pb-6 mt-14 px-6 text-white">Professional Resume Writing Services
-
-          </h1>
-          <p className="text-md px-6 text-gray-400">Resume Target is the top-rated professional resume writing service in North America, empowering job search and career transition for all industries and career levels for over 15 years. Our professional resume writers are experts at their craft. On completing our resume service, you'll apply with confidence using a professional resume you are truly proud of to open more career opportunities than you thought possible.</p>
+        <div
+        className="w-full px-4 py-16 flex items-center justify-between mt-1"
+      >
+        {/* Left Side - Text Section */}
+        <div className="flex flex-col">
+        <h1 className="text-5xl font-bold text-black typing-animation mb-3">
+        Get the resume that gets you hired
+                </h1>
+          <Button
+            className="mt-5 w-56 text-lg px-6 bg-green-600 hover:bg-green-700 text-black rounded-md"
+            onClick={handleFreeResumeReview}
+          >
+            Check Our Prices
+          </Button>
         </div>
 
+        {/* Right Side - Image Section */}
+        <div className="relative w-1/2">
+          <img
+            src={teamImage}
+            alt="Team"
+            className="w-full h-full transition-transform transform hover:shadow-lg hover:shadow-black/50 duration-500 ease-in-out"
+          />
+        </div>
+      </div>
+         {/* Zig-Zag Category Section */}
+       <div className="py-16 secondary-bg">
+        <div className="container mx-auto text-center mb-8">
+          <h2 className="text-3xl font-bold mb-4">Choose Your Level</h2>
+          <p className="text-gray-600">
+            Whether you're a student just starting out or a seasoned professional,
+            we have services tailored for your career stage.
+          </p>
+        </div>
+        <HomeCategory />
+      </div>
+
 <div className="my-10">
-<div className="px-5 py-28 bg-gray-50">
+<div className="px-5 py-28">
 <div className="flex flex-col md:flex-row justify-between">
   {/* Left side with the text content */}
   <div className="flex flex-col w-full md:w-1/2 md:pr-10">

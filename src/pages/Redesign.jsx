@@ -1,11 +1,11 @@
 import React from 'react';
-import Header1 from "@/components/header1";
+import Header from "@/components/header";
 import { Button } from "@/components/ui/button";
 import teamImage from '../assets/team.jpg';
 import { useNavigate } from "react-router-dom";
 import HomeCategory1 from "@/components/components-templates/HomeCategory1";
-import Footer1 from "@/components/footer1";
-import ResumeReviewForm1 from "./emailForm1";
+import Footer from "@/components/footer";
+import ResumeReviewForm from "./emailForm";
 import '../App.css'
 const Redesign = () => {
   const navigate = useNavigate();
@@ -16,8 +16,8 @@ const Redesign = () => {
 
   return (
     <div>
-        <div  className="bg-gradient-to-bl from-[#005f73] via-[#0a9396] to-[#94d2bd] ">
-        <Header1 />
+        <div  className="bg-custom-gradient ">
+        <Header />
       <div
         className="w-full px-4 py-16 flex items-center justify-between mt-1"
       >
@@ -102,13 +102,13 @@ const Redesign = () => {
           {/* Right side with the form */}
           <div className="w-full md:w-1/2 mt-10 md:mt-0">
             <div className="transform transition-transform duration-300 ease-in-out hover:scale-105">
-              <ResumeReviewForm1 />
+              <ResumeReviewForm />
             </div>
           </div>
         </div>
       </div>
     </div>
-      <Footer1/>
+      <Footer/>
     </div>
   );
 };

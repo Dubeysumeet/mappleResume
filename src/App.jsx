@@ -20,7 +20,7 @@ function App() {
   return (
     <div>
       <Router>
-        {/* <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col min-h-screen bg-custom-gradient">
           <Header />
           <main className="flex-grow">
             <Routes>
@@ -36,13 +36,14 @@ function App() {
               <Route path="/our-pricing" element={<PricingPage />} />
               <Route path="/404" element={<NotFound />} />
               <Route path="*" element={<NotFound />} />
+              <Route path="/redesign" element={<Redesign />} />
             </Routes>
           </main>
           <Footer />
-        </div> */}
-        <Routes>
+        </div>
+        {/* <Routes>
         <Route path="/" element={<Redesign />} />
-        </Routes>
+        </Routes> */}
       </Router>
     </div>
   );
