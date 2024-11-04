@@ -18,7 +18,7 @@ const Footer = () => {
     <div className="footer flex flex-col px-5"> {/* Updated gradient background */}
       <div className="footer-section-2 flex flex-wrap justify-between py-10 border-b border-gray-700">
         <div className="flex flex-col">
-          <h2 className="text-green-600 text-2xl font-semibold pb-6">Resume Writing Experts</h2>
+          <h2 className="text-green-800 text-2xl font-semibold pb-6">Resume Writing Experts</h2>
           <nav className="flex flex-col gap-5">
             <NavLink to="/" className="text-white text-base leading-5 hover:underline">Home</NavLink>
             <NavLink to="/our-pricing" className="text-white text-base leading-4 hover:underline">Our Pricing</NavLink>
@@ -33,7 +33,7 @@ const Footer = () => {
           </a>
         </div>
         <div className="social-icons flex flex-col">
-          <h2 className="text-green-600 text-2xl font-semibold pb-6">Follow Us</h2>
+          <h2 className="text-green-800 text-2xl font-semibold pb-6">Follow Us</h2>
           <div className="flex gap-4">
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
               <FacebookIcon className="text-gray-400 text-lg hover:text-green-700" />
