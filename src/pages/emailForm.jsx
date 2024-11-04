@@ -62,11 +62,11 @@ const ResumeReviewForm = () => {
   };
 
   return (
-    <div className="flex justify-center items-center h-full py-10">
+    <div className="flex justify-center items-center h-full">
       <div className=" emailform p-8 shadow-2xl w-3/5 transition-transform transform hover:scale-105 duration-300">
         {!submitted ? (
           <>
-            <h2 className="text-2xl font-extrabold text-center mb-6 text-blue-600 animate-fadeIn">Resume Review Request</h2>
+            <h2 className="text-2xl font-extrabold text-center mb-6 secondary-color animate-fadeIn">Resume Review Request</h2>
             <form onSubmit={handleSubmit} className="space-y-5">
               <div className="mb-4">
                 <label className="block label-sty">Your Name</label>
@@ -114,8 +114,8 @@ const ResumeReviewForm = () => {
               </div>
               <button
                 type="submit"
-                className={`py-2 px-4 mx-auto rounded-lg text-white font-bold flex items-center justify-center ${
-                  loading ? 'bg-gray-400 cursor-not-allowed' : 'bg-blue-500 hover:bg-blue-600'
+                className={`py-2 px-4 mx-auto rounded-xl text-white font-bold flex items-center justify-center ${
+                  loading ? 'bg-gray-400 cursor-not-allowed' : 'secondary-btn hover:bg-blue-600'
                 } transition-transform transform hover:scale-105 focus:outline-none`}
                 disabled={loading}
               >

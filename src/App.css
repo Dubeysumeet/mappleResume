@@ -66,3 +66,21 @@ body {
     border: none;
     border-bottom: 2px solid #137260 !important;
   }
+
+  .primary-btn{
+    width: fit-content;
+    padding: 22px 21px !important;
+    border-radius: 20px !important;
+    color: white !important;
+    background-color: rgb(4, 91,36) !important;
+  }
+
+  .secondary-color{
+    color: rgb(6, 34 ,97) !important;
+  }
+  .secondary-btn{
+    background-color: rgb(6, 34 ,97) !important;
+  }
+  .cursuive-family{
+    font-family: cursive !important;
+  }

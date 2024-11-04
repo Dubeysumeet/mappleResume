@@ -49,7 +49,7 @@ const HomeTestimonialCarousel = () => {
   };
 
   return (
-    <div className="px-5 py-32 flex justify-center items-center">
+    <div className="px-5 py-12 flex justify-center items-center">
       <div className="w-full max-w-4xl flex items-center justify-between relative gap-12">
         <button
           onClick={handlePrevClick}
@@ -63,9 +63,9 @@ const HomeTestimonialCarousel = () => {
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
-          <div className=" p-5 rounded-lg shadow-lg bg-white w-full flex items-center flex-col">
+          <div className=" p-5 shadow-lg tag-card rounded-3xl w-full flex items-center flex-col">
            
-            <p className="text-black text-3xl font-bold text-center p-6 font-serif mb-4">{testimonials[current].text}</p>
+            <p className="text-black text-3xl text-center p-6 cursuive-family mb-4">{testimonials[current].text}</p>
             <div className="flex items-center pb-5">
               {testimonials[current].image ? (
                 <img

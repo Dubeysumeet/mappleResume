@@ -41,9 +41,6 @@ function App() {
           </main>
           <Footer />
         </div>
-        {/* <Routes>
-        <Route path="/" element={<Redesign />} />
-        </Routes> */}
       </Router>
     </div>
   );
