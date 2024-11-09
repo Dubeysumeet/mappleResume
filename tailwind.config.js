@@ -17,7 +17,14 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        sans: 'var(--font-main)', 
+      },
       colors: {
+        background: 'var(--bg-color)', 
+        primary: 'var(--primary-color)',
+        secondary: 'var(--secondary-color)',
+        text: 'var(--text-color)',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

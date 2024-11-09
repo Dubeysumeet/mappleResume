@@ -6,10 +6,10 @@ import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 
 const HomeSection1 = () => {
   return (
-    <div className="px-5 py-32">
-    <h2 className="text-center text-5xl font-bold text-black">The Resume Target Method</h2>
-    <h4 className="text-center text-2xl pt-5 text-black">Our proven resume-writing process holds a 98% interview success rate</h4>
-    <div className="flex flex-wrap justify-between mt-20">
+    <div className="px-5 py-12">
+    <h2 className="text-center text-4xl font-bold text-black">The Resume Target Method</h2>
+    <h4 className="text-center text-xl pt-3 text-black">Our proven resume-writing process holds a 98% interview success rate</h4>
+    <div className="flex flex-wrap justify-between mt-10">
         <a href="" className="text-center w-1/5">
         <span><CallIcon className="text-green-600 mr-5 mb-5 hover:text-green-950" style={{ width: '50px', height: '50px' }}  /></span>
             <h3 className="text-xl font-semibold text-black">Interview with

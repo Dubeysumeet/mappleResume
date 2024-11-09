@@ -7,7 +7,7 @@ import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 const PricingSection = ({ packages }) => {
  
   return (
-    <div className="bg-gray-100 py-10" id="packages">
+    <div className="bg-custom-gradient py-10" id="packages">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap justify-center">
           {packages.map((pkg, index) => (

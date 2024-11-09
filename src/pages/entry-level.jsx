@@ -61,14 +61,14 @@ const EntryLevel = () => {
     return (
       <>
       <NavCategory/>
-        <div className="px-5 py-28 bg-gray-50">
+        <div className="px-5 py-28 secondary-bg">
           <div className="flex flex-wrap justify-between">
             <div className="flex flex-col w-full md:w-2/3">
               <h1 className="text-5xl text-black font-bold">Student / Entry Resume Writing Services</h1>
-              <p className="py-9 text-xl font-bold text-green-600">Recent graduates or 0-2 years experience</p>
+              <p className="py-9 text-xl font-bold text-green-700">Recent graduates or 0-2 years experience</p>
               <p className="pb-5 text-xl leading-8">The Student and Entry Resume Service will help you land a new role with limited or zero work experience. Our professional resume writers will leverage your academic skills to show your future employer you are ready to add value in the working world.</p>
               <span>
-              <a href="#packages" className="text-lg font-semibold hover:underline">  <ExpandCircleDownIcon className="text-green-600 mr-5" style={{ width: '40px', height: '40px' }}  /> Show Packages</a>
+              <a href="#packages" className="text-lg font-semibold hover:underline">  <ExpandCircleDownIcon className="text-green-700 mr-5" style={{ width: '40px', height: '40px' }}  /> Show Packages</a>
               </span>
                 
             

@@ -61,15 +61,15 @@ const SeniorLevel = () => {
     return (
       <>
       <NavCategory/>
-        <div className="px-5 py-28 bg-gray-50">
+        <div className="px-5 py-28 secondary-bg">
           <div className="flex flex-wrap justify-between">
             <div className="flex flex-col w-full md:w-2/3">
               <h1 className="text-5xl text-black font-bold">Senior Professional
 Resume Writing Services</h1>
-              <p className="py-9 text-xl font-bold text-green-600">5+ years experience seeking up to $115k</p>
+              <p className="py-9 text-xl font-bold text-green-700">5+ years experience seeking up to $115k</p>
               <p className="pb-5 text-xl leading-8">The Senior Professional Resume Service will help you secure senior management roles in any industry. Our professional resume writer will leverage your leadership abilities and career accomplishments to align your resume with your next senior position.</p>
               <span>
-              <a href="#packages" className="text-lg font-semibold hover:underline">  <ExpandCircleDownIcon className="text-green-600 mr-5" style={{ width: '40px', height: '40px' }}  /> Show Packages</a>
+              <a href="#packages" className="text-lg font-semibold hover:underline">  <ExpandCircleDownIcon className="text-green-700 mr-5" style={{ width: '40px', height: '40px' }}  /> Show Packages</a>
               </span>
                 
             

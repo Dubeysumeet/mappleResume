@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { User, Briefcase, UserCheck, Users, Award } from "lucide-react"; // Importing Lucide icons
 import teamImage from '../../assets/student1.jpeg';
-import '../../App.css'
 
 const categories = [
   {
@@ -37,7 +36,7 @@ const categories = [
   },
 ];
 
-const HomeCategory = () => {
+const HomeCategory1 = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -75,7 +74,7 @@ const HomeCategory = () => {
           {categories.map((category, index) => (
             <div
               key={category.id}
-              className={`tag-card rounded-2xl cursor-pointer transition-all duration-300 p-4 ${selectedCategory === category.id ? "bg-green-100 border-green-600" : "bg-white border-gray-300"} ${index % 2 === 0 ? "ml-auto" : "mr-auto"} w-3/5`}
+              className={`border border-black rounded-2xl shadow-md cursor-pointer transition-all duration-300 p-4 ${selectedCategory === category.id ? "bg-green-100 border-green-600" : "bg-white border-gray-300"} ${index % 2 === 0 ? "ml-auto" : "mr-auto"} w-3/5`}
               onClick={() => handleCategoryClick(category.id)}
             >
               <div className="flex justify-between items-center">
@@ -93,4 +92,4 @@ const HomeCategory = () => {
   );
 };
 
-export default HomeCategory;
+export default HomeCategory1;
