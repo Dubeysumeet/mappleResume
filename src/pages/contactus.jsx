@@ -5,18 +5,18 @@ const Contact = () => {
   return (
     <>
       {/* Header Section */}
-      <div className="text-center py-24 pl-16 pr-16 mt-1 bg-gray-50">
+      <div className="text-center py-24 pl-16 pr-16 mt-1 secondary-bg">
         <h2 className="text-5xl text-black font-bold mb-8">Contact Us</h2>
-        <p className="text-md text-gray-500 font-medium">We are here to help you! Get in touch with us for any inquiries.</p>
+        <p className="text-md text-gray-700 font-medium">We are here to help you! Get in touch with us for any inquiries.</p>
       </div>
 
       {/* Contact Details Section */}
-      <div className="bg-gray-100 min-h-screen py-12 px-6">
-      <div className="max-w-7xl mx-auto bg-white shadow-lg rounded-lg p-8">  
+      <div className="bg-custom-gradient min-h-screen py-12 px-6">
+      <div className="max-w-7xl mx-auto tag-card shadow-lg rounded-2xl p-8">  
         <div className="flex flex-col md:flex-row md:space-x-8 mb-8">
           {/* Contact Details Section */}
           <div className="flex-1">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4">Get in Touch</h2>
+            <h2 className="text-2xl font-semibold text-gray-700 mb-4">Get in Touch</h2>
             <div className="mb-4">
               <h3 className="font-bold text-gray-700">Office Address:</h3>
               <p className="text-gray-600">123 Maple Street, Suite 100<br />City, State, 12345</p>

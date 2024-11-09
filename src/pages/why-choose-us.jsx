@@ -1,128 +1,75 @@
-import { Smartphone } from "lucide-react";
+import { useInView } from "react-intersection-observer";
+import { motion, AnimatePresence } from "framer-motion";
 
 const WhyChooseUs = () => {
+  const cardsData = [
+    {
+      title: "Personalized Feedback",
+      content: "Our experts review your resume, providing advice tailored to Canadian job markets.",
+      buttonText: "Learn More",
+      buttonLink: "#"
+    },
+    {
+      title: "Career-Focused Approach",
+      content: "We align your resume with in-demand skills and formats preferred by Canadian employers.",
+      buttonText: "See Our Services",
+      buttonLink: "#"
+    },
+    {
+      title: "Free Access for 2 Months",
+      content: "Try our resume review service at no cost during the pilot phase.",
+      buttonText: "Sign Up Free",
+      buttonLink: "#"
+    },
+    {
+      title: "Pilot Program Benefits",
+      content: "Your feedback helps shape Maple Resume into Canada’s go-to resume resource.",
+      buttonText: "Give Feedback",
+      buttonLink: "#"
+    }
+  ];
+
   return (
     <>
-    <div className="text-center py-24 pl-16 pr-16 mt-1 bg-gray-50">
-      <h2 className="text-5xl text-black font-bold mb-8">Why Choose Us</h2>
-      <p className="text-md text-gray-500 font-medium">When you choose Resume Target you don’t just get a new resume - you benefit from a proven resume writing service built around your success.</p>
-    </div>
-   <div className="flex p-5 mt-20">
+      <div className="text-center py-24 px-16 mt-1 secondary-bg">
+        <h2 className="text-5xl text-black font-bold mb-8">Welcome to Maple Resume</h2>
+        <p className="text-lg text-gray-700 font-medium mb-4">
+          Maple Resume is your dedicated Canadian partner in career advancement. During our pilot project, we’re offering free resume review services for the first two months. Join us early to access personalized career resources tailored to Canadian job markets.
+        </p>
+        <p className="text-md text-gray-600 font-medium">
+          Your feedback is essential as we build Maple Resume into the go-to resource for Canadian job seekers.
+        </p>
+      </div>
 
-    <div className="w-4/6 h-3/4 mr-7">
-    <div className="text-start flex flex-col gap-8 my-10 bg-gray-50 px-20 py-8">
-      <h1 className="text-3xl text-black font-bold ">Why Choose Us</h1>
-      <h5 className="text-md text-gray-400 font-medium">When you choose Resume Target you don’t just get a new resume - you benefit from a proven resume writing service built around your success.</h5>
-      <a href="#" className="text-md"><span className=" bg-white text-green-600 px-10 py-3">Lorem ipsum dolor sit amet</span></a>
-    </div>
+      <div className="flex p-5 mt-20">
+        <div className="w-4/6 h-3/4 mx-auto">
+          <AnimatePresence>
+            {cardsData.map((card, index) => {
+              const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.2 });
 
-    <div className="text-start flex flex-col gap-8 my-10 bg-gray-50 px-20 py-8">
-      <h1 className="text-3xl text-black font-bold ">Why Choose Us</h1>
-      <h5 className="text-md text-gray-400 font-medium">When you choose Resume Target you don’t just get a new resume - you benefit from a proven resume writing service built around your success.</h5>
-      <a href="#" className="text-md"><span className=" bg-white text-green-600 px-10 py-3">Lorem ipsum dolor sit amet</span></a>
-    </div>
-
-    <div className="text-start flex flex-col gap-8 my-10 bg-gray-50 px-20 py-8">
-      <h1 className="text-3xl text-black font-bold ">Why Choose Us</h1>
-      <h5 className="text-md text-gray-400 font-medium">When you choose Resume Target you don’t just get a new resume - you benefit from a proven resume writing service built around your success.</h5>
-      <a href="#" className="text-md"><span className=" bg-white text-green-600 px-10 py-3">Lorem ipsum dolor sit amet</span></a>
-    </div>
-
-    <div className="text-start flex flex-col gap-8 my-10 bg-gray-50 px-20 py-8">
-      <h1 className="text-3xl text-black font-bold ">Why Choose Us</h1>
-      <h5 className="text-md text-gray-400 font-medium">When you choose Resume Target you don’t just get a new resume - you benefit from a proven resume writing service built around your success.</h5>
-      <a href="#" className="text-md"><span className=" bg-white text-green-600 px-10 py-3">Lorem ipsum dolor sit amet</span></a>
-    </div>
-
-    <div className="text-start flex flex-col gap-8 my-10 bg-gray-50 px-20 py-8">
-      <h1 className="text-3xl text-black font-bold ">Why Choose Us</h1>
-      <h5 className="text-md text-gray-400 font-medium">When you choose Resume Target you don’t just get a new resume - you benefit from a proven resume writing service built around your success.</h5>
-      <a href="#" className="text-md"><span className=" bg-white text-green-600 px-10 py-3">Lorem ipsum dolor sit amet</span></a>
-    </div>
-
-    <div className="text-start flex flex-col gap-8 my-10 bg-gray-50 px-20 py-8">
-      <h1 className="text-3xl text-black font-bold ">Why Choose Us</h1>
-      <h5 className="text-md text-gray-400 font-medium">When you choose Resume Target you don’t just get a new resume - you benefit from a proven resume writing service built around your success.</h5>
-      <a href="#" className="text-md"><span className=" bg-white text-green-600 px-10 py-3">Lorem ipsum dolor sit amet</span></a>
-    </div>
-
-    </div>
-
-    <div className="w-2/6 flex flex-col py-24 gap-6">
-
-<div className="bg-blue-950 p-8">
-<h1 className="text-4xl font-bold text-white mb-6">Get your resume reviewed <span className="text-green-700"> for free</span></h1>
-
-<p className="text-base text-white">Upload your resume and a Resume Advisor will call you to review your resume.</p>
-
-<form action="">
-  <div className="my-3 flex flex-col w-3/4 gap-1">
-  <label htmlFor="" className='text-base text-white'>Name:</label>
-  <input type="text" placeholder="Your First and Last Name" className="mt-1 pl-4 py-3 text-sm  border bg-blue-950 border-black"/>
-  </div>
-  
-  <div className="my-3 flex-col w-3/4 gap-1">
-  <label htmlFor="" className='text-base text-white'>Email:</label>
-  <input type="email" placeholder="Your Email Address" className="mt-1 pl-4 py-3 text-sm border bg-blue-950 border-black"/>
-  </div>
-
-  <div className="my-3 flex-col w-3/4 gap-1">
-  <label htmlFor="" className='text-base text-white'>Phone:</label>
-  <input type="tel" placeholder="222-222-222" className="mt-1 pl-4 py-3 text-sm border bg-blue-950 border-black"/>
-
-</div>
-<div className="my-2 flex-col w-3/4 gap-1">
-<label htmlFor="" className='text-base text-white'>Upload</label>
-  <input type="file" placeholder="Upload Docs" className="mt-1 py-2 text-sm bg-blue-950"/>
-</div>
-
-<div className="my-3 flex-col w-3/4 gap-1">
-<button type="submit" className="mt-1 px-8 py-3 mb-8 text-lg bg-green-500 text-white">Submit</button>
-</div>
-
-</form>
-
-<hr/>
-
-<div className="my-10">
-  <p className="mb-3 text-sm text-gray-300">We Respect your Privacy</p>
-
-  <p className="mb-3 text-xs text-gray-300">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta harum ea beatae, amet autem nulla quae nihil quos distinctio fuga?</p>
-</div>
-
-</div>
-
-<div className="bg-green-900 p-8">
-  <h2 className="text-4xl text-white mb-8 font-bold"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-
-  <p className="text-sm text-white"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel soluta iusto ducimus accusantium mollitia inventore!</p>
-
-  <button className="p-3 bg-white mt-8" > Start quiz test</button>
-</div>
-
-<div>
-  <h2 className="text-4xl text-black font-bold px-14 mt-6">We're just a phone call away</h2>
-  <div className="flex flex-col my-7 gap-2 px-14">
-            <p className="text-lg text-black">Just one call Away</p>
-           
-            <div className="flex gap-1">
-            <Smartphone className="text-green-600" size={28} />
-            <a
-              href="tel:+1-877-208-6117"
-              className="text-black text-2xl hover:underline font-bold"
-            >
-              {" "}
-              1-877-208-6117{" "}
-            </a>
-            </div>
-           
-          </div>
-</div>
-    </div>
-   </div>
-   </>
-  
-  )
-}
+              return (
+                <motion.div
+                  key={index}
+                  ref={ref}
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={inView ? { opacity: 1, y: 0 } : {}}
+                  exit={{ opacity: 0, y: 50 }}
+                  transition={{ duration: 0.5, delay: index * 0.2 }}
+                  className="text-start flex flex-col gap-8 my-10 tag-card rounded-xl px-20 py-8"
+                >
+                  <h1 className="text-3xl text-black font-bold">{card.title}</h1>
+                  <h5 className="text-md text-gray-700 font-medium">{card.content}</h5>
+                  <a href={card.buttonLink} className="text-md">
+                    <span className="tag-card rounded-2xl text-white px-10 py-3">{card.buttonText}</span>
+                  </a>
+                </motion.div>
+              );
+            })}
+          </AnimatePresence>
+        </div>
+      </div>
+    </>
+  );
+};
 
 export default WhyChooseUs;

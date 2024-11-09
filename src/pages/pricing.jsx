@@ -26,17 +26,17 @@ const PricingPage = () => {
   }, []);
 
   return (
-    <div className="bg-gray-100 min-h-screen py-12">
+    <div className="secondary-bg min-h-screen py-12">
       {/* Header Section */}
       <header className="text-center mb-12">
         <h1 className="text-4xl font-bold text-gray-800">Our Pricing Plans</h1>
-        <p className="text-xl text-gray-500 mt-4">Currently, we are offering a <span className="text-green-600">Free Trial</span> for our resume review services. Take advantage of this limited-time offer!</p>
+        <p className="text-xl text-gray-700 mt-4">Currently, we are offering a <span className="text-green-700">Free Trial</span> for our resume review services. Take advantage of this limited-time offer!</p>
       </header>
 
       {/* Trials Banner with Countdown */}
       <section className="flex justify-center mt-6">
-        <div className="bg-green-600 p-8 rounded-lg shadow-lg w-full mx-10">
-          <h2 className="text-3xl font-bold text-white">Limited-Time Offer: Free Resume Review</h2>
+        <div className="tag-card p-8 rounded-2xl shadow-xl mx-10">
+          <h2 className="text-4xl font-bold text-white">Limited-Time Offer: Free Resume Review</h2>
           <p className="text-lg text-white mt-4">
             Don't miss out! Our team of experts is offering free resume reviews as part of our trial service. Improve your chances of landing an interview today!
           </p>
@@ -63,10 +63,10 @@ const PricingPage = () => {
       <section className="max-w-7xl mx-auto px-6 mt-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Pricing Information Card */}
-          <div className="bg-white p-8 shadow-lg rounded-lg mx-auto w-full max-w-3xl">
-            <h2 className="text-2xl font-bold text-gray-800 mb-6">Why Choose Us?</h2>
+          <div className="p-8 shadow-xl mx-auto w-full max-w-3xl">
+            <h2 className="text-2xl font-bold text-gray-700 mb-6">Why Choose Us?</h2>
             <p className="text-gray-600 mb-4">
-              As part of our trial program, we are offering professional resume review services <span className="font-bold text-green-600">completely free of charge</span>. During this trial, our experts will:
+              As part of our trial program, we are offering professional resume review services <span className="font-bold text-green-700">completely free of charge</span>. During this trial, our experts will:
             </p>
             <ul className="list-disc pl-5 mb-6">
               <li className="text-gray-600 py-2">Provide feedback on the structure and content of your resume.</li>
@@ -80,8 +80,8 @@ const PricingPage = () => {
           </div>
 
           {/* Resume Review Form Card */}
-          <div className="bg-white p-8 shadow-lg rounded-lg mx-auto w-full max-w-3xl">
-            <h2 className="text-2xl font-bold text-gray-800 mb-6">Get Your Free Resume Review</h2>
+          <div className=" p-8 shadow-xl mx-auto">
+            <h2 className="text-2xl font-bold text-gray-700 mb-6">Get Your Free Resume Review</h2>
             <p className="text-gray-600 mb-4">Fill out the form, and our team will review your resume and get back to you within 12 hours.</p>
             <ResumeReviewForm />
           </div>

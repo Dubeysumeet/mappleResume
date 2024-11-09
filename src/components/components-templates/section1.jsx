@@ -6,7 +6,7 @@ import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 
 const Section1 = () => {
   return (
-    <div className="px-5 py-32 bg-blue-950">
+    <div className="px-5 py-32 secondary-bg">
     <h2 className="text-center text-5xl font-bold text-white">More Ways to Order</h2>
     <div className="flex flex-wrap justify-between mt-20">
         <a href="" className="text-center w-1/5">

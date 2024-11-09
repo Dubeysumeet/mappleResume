@@ -49,7 +49,7 @@ const TestimonialCarousel = () => {
   };
 
   return (
-    <div className="px-5 py-32 bg-blue-950 flex justify-center items-center">
+    <div className="px-5 py-32 bg-custom-gradient flex justify-center items-center">
       <div className="w-full max-w-4xl flex items-center justify-between relative gap-12">
         <button
           onClick={handlePrevClick}
@@ -63,7 +63,7 @@ const TestimonialCarousel = () => {
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
-          <div className=" p-5 rounded-lg shadow-lg bg-white w-full flex items-center flex-col">
+          <div className=" p-5 rounded-2xl shadow-xl tag-card w-full flex items-center flex-col">
            
             <p className="text-black text-3xl font-bold text-center p-6 font-serif mb-4">{testimonials[current].text}</p>
             <div className="flex items-center pb-5">

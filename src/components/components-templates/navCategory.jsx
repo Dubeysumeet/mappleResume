@@ -68,7 +68,7 @@ const UserCategory = () => {
         {categories.map((category) => (
           <div
             key={category.id}
-            className={`border p-4 rounded cursor-pointer hover:border-green-600 hover:text-green-600 ${
+            className={`p-4  rounded-xl cursor-pointer hover:border-green-600 hover:text-green-600 ${
               selectedCategory === category.id
                 ? "bg-green-100 border-green-600"
                 : "bg-white"

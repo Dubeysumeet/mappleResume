@@ -62,7 +62,7 @@ const ResumeReviewForm = () => {
   };
 
   return (
-    <div className="flex justify-center items-center h-full">
+    <div className="flex justify-center items-center">
       <div className=" emailform p-8 shadow-2xl w-3/5 transition-transform transform hover:scale-105 duration-300">
         {!submitted ? (
           <>

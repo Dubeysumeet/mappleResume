@@ -3,7 +3,7 @@ import StarIcon from '@mui/icons-material/Star';
 
 const TopRatedResumeService = () => {
   return (
-    <div className="hidden lg:block bg-white p-5 rounded-md shadow-lg">
+    <div className="hidden lg:block p-5 rounded-md shadow-lg">
       <div className="flex justify-center mb-4">
         <img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" alt="Google Logo" className="h-8" />
       </div>
