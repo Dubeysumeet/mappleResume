@@ -20,7 +20,7 @@ const Faqs = () => {
   return (
     <div className="px-5 py-20 secondary-bg"> 
     <h2 className="text-center text-5xl font-bold text-black mb-16">More FAQs</h2>
-    <div className="w-3/4 mx-auto">
+    <div className="md:w-3/4 md:mx-auto">
     <Accordion type="single" collapsible>
         <AccordionItem value="item-1" className="mb-2">
             <AccordionTrigger className="text-2xl text-black border p-6">

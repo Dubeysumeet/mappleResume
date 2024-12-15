@@ -32,8 +32,8 @@ const WhyChooseUs = () => {
   return (
     <>
       <div className="text-center py-24 px-16 mt-1 secondary-bg">
-        <h2 className="text-5xl text-black font-bold mb-8">Welcome to Maple Resume</h2>
-        <p className="text-lg text-gray-700 font-medium mb-4">
+        <h2 className=" text-3xl md:text-5xl text-black font-bold mb-8">Welcome to Maple Resume</h2>
+        <p className="text-md md:text-lg text-gray-700 font-medium mb-4">
           Maple Resume is your dedicated Canadian partner in career advancement. During our pilot project, we’re offering free resume review services for the first two months. Join us early to access personalized career resources tailored to Canadian job markets.
         </p>
         <p className="text-md text-gray-600 font-medium">
@@ -41,7 +41,7 @@ const WhyChooseUs = () => {
         </p>
       </div>
 
-      <div className="flex p-5 mt-20">
+      <div className="flex md:p-5 mt-20">
         <div className="w-4/6 h-3/4 mx-auto">
           <AnimatePresence>
             {cardsData.map((card, index) => {
@@ -55,7 +55,7 @@ const WhyChooseUs = () => {
                   animate={inView ? { opacity: 1, y: 0 } : {}}
                   exit={{ opacity: 0, y: 50 }}
                   transition={{ duration: 0.5, delay: index * 0.2 }}
-                  className="text-start flex flex-col gap-8 my-10 tag-card rounded-xl px-20 py-8"
+                  className="text-start flex flex-col gap-8 my-10 tag-card rounded-xl px-2 md:px-20 py-8"
                 >
                   <h1 className="text-3xl text-black font-bold">{card.title}</h1>
                   <h5 className="text-md text-gray-700 font-medium">{card.content}</h5>

@@ -23,9 +23,9 @@ const CareerLevel = () => {
                 
             
             </div>
-            <div className="bg-green-500 w-full md:w-1/2">
+            {/* <div className="bg-green-500 w-full md:w-1/2">
               gfgfg
-            </div>
+            </div> */}
           </div>
         </div>
 

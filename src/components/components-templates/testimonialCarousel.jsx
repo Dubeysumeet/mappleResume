@@ -51,12 +51,12 @@ const TestimonialCarousel = () => {
   return (
     <div className="px-5 py-32 bg-custom-gradient flex justify-center items-center">
       <div className="w-full max-w-4xl flex items-center justify-between relative gap-12">
-        <button
+        {/* <button
           onClick={handlePrevClick}
           className="text-white bg-gray-800 bg-opacity-50 hover:bg-opacity-75 hover:bg-green-700 p-2 rounded-full"
         >
           <ArrowBackIos />
-        </button>
+        </button> */}
 
         <div
           className="flex justify-center flex-grow mx-4" // Added margin for spacing
@@ -85,13 +85,13 @@ const TestimonialCarousel = () => {
             </div>
           </div>
         </div>
-
+{/* 
         <button
           onClick={handleNextClick}
           className="text-white bg-gray-800 bg-opacity-50 hover:bg-green-700 hover:bg-opacity-75 p-2 rounded-full"
         >
           <ArrowForwardIos />
-        </button>
+        </button> */}
       </div>
     </div>
   );

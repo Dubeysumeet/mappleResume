@@ -74,9 +74,9 @@ Writing Services</h1>
                 
             
             </div>
-            <div className=" md:w-1/3">
+            {/* <div className=" md:w-1/3">
               <TopRatedResumeService/>
-            </div>
+            </div> */}
           </div>
         </div>
         <PricingSection packages={packages}/>

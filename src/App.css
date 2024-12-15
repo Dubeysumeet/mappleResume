@@ -84,3 +84,6 @@ body {
   .cursuive-family{
     font-family: cursive !important;
   }
+  .banner{
+    padding-inline: 1px;
+  }

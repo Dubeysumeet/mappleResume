@@ -35,24 +35,24 @@ const PricingPage = () => {
 
       {/* Trials Banner with Countdown */}
       <section className="flex justify-center mt-6">
-        <div className="tag-card p-8 rounded-2xl shadow-xl mx-10">
-          <h2 className="text-4xl font-bold text-white">Limited-Time Offer: Free Resume Review</h2>
-          <p className="text-lg text-white mt-4">
+        <div className="tag-card p-8 rounded-2xl shadow-xl mx-1">
+          <h2 className="text-2xl md:text-4xl font-bold text-white">Limited-Time Offer: Free Resume Review</h2>
+          <p className="text-md md:text-lg text-white mt-4">
             Don't miss out! Our team of experts is offering free resume reviews as part of our trial service. Improve your chances of landing an interview today!
           </p>
 
           {/* Countdown Timer */}
-          <div className="flex justify-center mt-6 space-x-4 text-white text-lg font-bold">
-            <div className="bg-green-700 px-4 py-2 rounded-lg">
-              <span>{timeLeft.days}</span> <br /> Days
+          <div className="flex flex-col sm:flex-row justify-center gap-4 md:gap-0 mt-6 md:space-x-4 text-white text-lg font-bold">
+            <div className="bg-green-700 px-4 py-2 rounded-lg min-w-32 mx-auto md:mx-0">
+              <span>{timeLeft.days}</span> <br/> Days
             </div>
-            <div className="bg-green-700 px-4 py-2 rounded-lg">
+            <div className="bg-green-700 px-4 py-2 rounded-lg min-w-32 mx-auto md:mx-0">
               <span>{timeLeft.hours}</span> <br /> Hours
             </div>
-            <div className="bg-green-700 px-4 py-2 rounded-lg">
+            <div className="bg-green-700 px-4 py-2 rounded-lg min-w-32 mx-auto md:mx-0">
               <span>{timeLeft.minutes}</span> <br /> Minutes
             </div>
-            <div className="bg-green-700 px-4 py-2 rounded-lg">
+            <div className="bg-green-700 px-4 py-2 rounded-lg min-w-32 mx-auto md:mx-0">
               <span>{timeLeft.seconds}</span> <br /> Seconds
             </div>
           </div>
@@ -80,7 +80,7 @@ const PricingPage = () => {
           </div>
 
           {/* Resume Review Form Card */}
-          <div className=" p-8 shadow-xl mx-auto">
+          <div className=" md:p-8 md:shadow-xl md:mx-auto">
             <h2 className="text-2xl font-bold text-gray-700 mb-6">Get Your Free Resume Review</h2>
             <p className="text-gray-600 mb-4">Fill out the form, and our team will review your resume and get back to you within 12 hours.</p>
             <ResumeReviewForm />

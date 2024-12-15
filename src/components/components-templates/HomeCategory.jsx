@@ -59,9 +59,9 @@ const HomeCategory = () => {
   };
 
   return (
-    <div className="container mx-auto pt-10 flex">
+    <div className="container mx-auto pt-10 flex flex-col md:flex-row">
       {/* Right Section: Image */}
-      <div className="w-1/2 pl-10 flex items-center justify-center">
+      <div className="md:w-1/2 md:pl-10 flex items-center justify-center">
         <img 
           src={teamImage} // Update the path to your image
           alt="Choose Your Level"
@@ -70,12 +70,12 @@ const HomeCategory = () => {
       </div>
 
       {/* Left Section: Category Cards */}
-      <div className="w-1/2 flex flex-col">
+      <div className="md:w-1/2 mt-5 md:mt-0 flex flex-col">
         <div className="flex flex-col space-y-6">
           {categories.map((category, index) => (
             <div
               key={category.id}
-              className={`tag-card rounded-2xl cursor-pointer transition-all duration-300 p-4 ${selectedCategory === category.id ? "bg-green-100 border-green-600" : "bg-white border-gray-300"} ${index % 2 === 0 ? "ml-auto" : "mr-auto"} w-3/5`}
+              className={`tag-card rounded-2xl cursor-pointer transition-all duration-300 p-4 ${selectedCategory === category.id ? "bg-green-100 border-green-600" : "bg-white border-gray-300"} ${index % 2 === 0 ? "ml-auto" : "mr-auto"} w-full sm:w-3/5`}
               onClick={() => handleCategoryClick(category.id)}
             >
               <div className="flex justify-between items-center">
