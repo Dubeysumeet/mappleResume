@@ -60,7 +60,7 @@ const PricingSection = ({ packages }) => {
                   <div className="flex justify-center ">
                     <span className='border-0 px-2 py-1 bg-mint-cream'>
                     <InfoIcon className="text-green-600 mr-1" />
-                    <a href="https://www.resumetarget.ca/how-it-works.php" className="text-green-600 text-sm font-semibold">
+                    <a href="#" className="text-green-600 text-sm font-semibold">
                       How It Works
                     </a>
                     </span>
@@ -70,7 +70,7 @@ const PricingSection = ({ packages }) => {
                     <span className='border-0 px-2 py-1 bg-mint-cream'>
                     <InfoIcon className="text-green-600 mr-1" />
                     <a
-                      href="https://www.resumetarget.ca/rush-resume-service.php"
+                      href="#"
                       className="text-green-600 text-sm font-semibold"
                     >
                       24 & 48 Hour Rush Services Available
@@ -82,7 +82,7 @@ const PricingSection = ({ packages }) => {
                 <div className="call-us mt-4">
                   <div className="flex justify-center items-center text-center">
                     <PhoneIphoneIcon className="text-green-600 mr-1" />
-                    <a href="book-appointment.php" className="text-black text-2xl font-bold hover:underline">
+                    <a href="/#emailform" className="text-black text-2xl font-bold hover:underline">
                       Schedule a Call Back
                     </a>
                   </div>

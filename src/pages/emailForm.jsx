@@ -79,7 +79,7 @@ const ResumeReviewForm = () => {
 
   return (
     <div className="flex justify-center items-center">
-      <div className=" emailform p-8 shadow-2xl md:w-3/5 transition-transform transform hover:scale-105 duration-300">
+      <div className=" emailform p-8 shadow-2xl md:w-3/5 transition-transform transform hover:scale-105 duration-300" id="emailform">
         {!submitted ? (
           <>
             <h2 className="text-2xl font-extrabold text-center mb-6 secondary-color animate-fadeIn">Resume Review Request</h2>
