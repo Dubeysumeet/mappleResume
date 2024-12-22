@@ -87,3 +87,6 @@ body {
   .banner{
     padding-inline: 1px;
   }
+  .br{
+    border-radius: 20px !important;
+  }

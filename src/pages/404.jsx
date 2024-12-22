@@ -6,7 +6,7 @@ import { FaBookOpen, FaExclamationTriangle } from 'react-icons/fa'; // Education
 
 const NotFound = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gray-100 text-center p-5">
+    <div className="flex flex-col items-center justify-center h-screen secondary-bg text-center p-5">
       <div className="text-6xl text-red-500 mb-4">
         <FaExclamationTriangle />
       </div>
@@ -18,7 +18,7 @@ const NotFound = () => {
       <div className="text-6xl mb-4">
         <FaBookOpen />
       </div>
-      <Link to="/" className="bg-green-500 text-white px-5 py-3 rounded-lg hover:bg-green-600">
+      <Link to="/" className="bg-green-500 text-white px-5 py-3 hover:bg-green-600 br">
         Go Back to Home
       </Link>
     </div>
