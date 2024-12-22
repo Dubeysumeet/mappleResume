@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import emailjs from '@emailjs/browser';  // Import EmailJS
-import { AiFillCheckCircle } from 'react-icons/ai';  // Icon for confirmation animation
-import { FiLoader } from 'react-icons/fi';  // Loader icon for loading state
+import emailjs from '@emailjs/browser'; 
+import { AiFillCheckCircle } from 'react-icons/ai';  
+import { FiLoader } from 'react-icons/fi'; 
 
 const ResumeReviewForm = () => {
   const [formData, setFormData] = useState({
@@ -18,17 +18,33 @@ const ResumeReviewForm = () => {
     setFormData({ ...formData, [name]: value });
   };
 
+  const adminEmailContent = {
+    ...formData,
+    subject: `Lead - ${formData.name} (Resume Review Request)`,
+    message: `
+      Hello Admin,
+
+      You have received a new resume review request from ${formData.name}. Here are the details:
+
+      - **Name**: ${formData.name}
+      - **Email**: ${formData.email}
+      - **Profession**: ${formData.profession}
+      - **Resume Details**: ${formData.resumeDetails}
+
+      Best regards,
+      Lead Generation Team
+    `,
+  };
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
 
-    // Send the main email to admin
     emailjs
       .send(
-        'service_eyxism2',  // Replace with your EmailJS Service ID
-        'template_29jud3l',  // Replace with your EmailJS Admin Template ID
-        formData,
-        '-X-Fcly7TbDGmkfXD'  // Replace with your EmailJS User ID
+        'service_eyxism2', 
+        'template_29jud3l', 
+        adminEmailContent,
+        '-X-Fcly7TbDGmkfXD' 
       )
       .then(
         (response) => {
@@ -42,10 +58,10 @@ const ResumeReviewForm = () => {
     // Send auto-reply to the user
     emailjs
       .send(
-        'service_eyxism2',  // Replace with your EmailJS Service ID
-        'template_aivqsh6',  // Replace with your EmailJS Auto-reply Template ID
+        'service_eyxism2', 
+        'template_aivqsh6',
         formData,
-        '-X-Fcly7TbDGmkfXD'  // Replace with your EmailJS User ID
+        '-X-Fcly7TbDGmkfXD'
       )
       .then(
         (response) => {
